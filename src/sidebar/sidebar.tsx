@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { NavLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,7 +21,7 @@ const Sidebar: React.FC = () => {
             <FontAwesomeIcon icon={faHome} />
           </NavLink>
         </span>
-        <span className="mb-0 h1">Emmanuel's poetry</span>
+        {/* <span className="mb-0 h1">Emmanuel's poetry</span> */}
 
         <button
           className="btn btn-outline-secondary btn-lg"
@@ -48,7 +49,6 @@ const Sidebar: React.FC = () => {
               <NavLink to="second" className="link">
                 2ND OF MANY
               </NavLink>
-
             </li>
             <li>
               <NavLink to="/26_letters" className="link ">
@@ -62,7 +62,7 @@ const Sidebar: React.FC = () => {
             </li>
             <li>
               <NavLink to="fourth_1" className="link">
-                FOURTH OF MANY <span className="it">(original version)</span>
+                4TH OF MANY <span className="it">(original version)</span>
               </NavLink>
             </li>
             <li>
@@ -118,12 +118,12 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="asphyxiation" className="link">
                 ASPHYXIATION
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="autocorrect" className="link">
                 AUTOCORRECT
               </NavLink>
             </li>
@@ -133,7 +133,7 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="boomerang" className="link">
                 BOOMERANG
               </NavLink>
             </li>
@@ -214,7 +214,7 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="i_am" className="link">
                 I AM
               </NavLink>
             </li>
@@ -229,6 +229,12 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
+              <NavLink to="karma_prelude" className="link">
+                KARMA 
+                <span className="it">(prelude)</span>
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="karma" className="link">
                 KARMA
               </NavLink>
@@ -239,12 +245,12 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="life" className="link">
                 LIFE
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="little_birdie" className="link">
                 LITTLE BIRDIE
               </NavLink>
             </li>
@@ -254,12 +260,12 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="lost" className="link">
                 LOST
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="love" className="link">
                 LOVE ?
               </NavLink>
             </li>
@@ -274,7 +280,9 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">MIRROR MIRROR</NavLink>
+              <NavLink to="mirror_mirror" className="link">
+                MIRROR MIRROR
+              </NavLink>
             </li>
             <li>
               <NavLink to="" className="link">
@@ -292,12 +300,12 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="never_love_again" className="link">
                 NEVER LOVE AGAIN
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="numb" className="link">
                 NUMB
               </NavLink>
             </li>
@@ -312,12 +320,12 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="paranoia" className="link">
                 PARANOIA
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="paranoia_2" className="link">
                 PARANOIA 2
               </NavLink>
             </li>
@@ -327,7 +335,7 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="pluviophile" className="link">
                 PLUVIOPHILE
               </NavLink>
             </li>
@@ -357,12 +365,14 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="silence" className="link">
                 SILENCE
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">SOMETIMES</NavLink>
+              <NavLink to="sometimes" className="link">
+                SOMETIMES
+              </NavLink>
             </li>
             <li>
               <NavLink to="" className="link">
@@ -385,12 +395,12 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="straitjacket" className="link">
                 STRAITJACKET
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="strangers" className="link">
                 STRANGERS
               </NavLink>
             </li>
@@ -410,7 +420,7 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="the_snail" className="link">
                 THE SNAIL
               </NavLink>
             </li>
@@ -421,7 +431,7 @@ const Sidebar: React.FC = () => {
             </li>
 
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="time" className="link">
                 TIME
               </NavLink>
             </li>
@@ -431,23 +441,28 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="vertigo" className="link">
                 VERTIGO
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="villain" className="link">
                 VILLAIN
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="whats_the_point" className="link">
                 WHAT'S THE POINT
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="why" className="link">
                 WHY?
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="why_2" className="link">
+                WHY 
               </NavLink>
             </li>
 

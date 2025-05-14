@@ -13,4 +13,6 @@ background-color: #191919;
 .slate-body p::first-letter{
     text-transform: uppercase;
 }
-
+.uppercase{
+    text-transform: uppercase;
+} 

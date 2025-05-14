@@ -16,7 +16,7 @@ const Slate: React.FC<SlateProps> = ({ header, children, className = "" }) => {
           <div className={`p-4   ${className}`}>
             {header && (
               <div className=" mb-4 text-center">
-                <h1 className="">{header}</h1>
+                <h1 className="uppercase">{header}</h1>
               </div>
             )}
             <div className="slate-body">{children}</div>
