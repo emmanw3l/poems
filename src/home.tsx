@@ -18,7 +18,7 @@ export default function Home() {
         <ProfileHeader
           coverPhotoUrl="/desk.jpg"
           profilePhotoUrl="/img2.png"
-          name="Emmanuel"
+          
         />
 
         <div className="mt d-flex col-6 mx-auto justify-content-between">
