@@ -1,10 +1,10 @@
 interface ProfileHeaderProps {
   coverPhotoUrl: string;
   profilePhotoUrl: string;
-  name: string;
+
 }
 
-export default function ProfileHeader({ coverPhotoUrl, profilePhotoUrl, name }: ProfileHeaderProps) {
+export default function ProfileHeader({ coverPhotoUrl, profilePhotoUrl,}: ProfileHeaderProps) {
   return (
     <div className="profile-header position-relative"
       style={{
