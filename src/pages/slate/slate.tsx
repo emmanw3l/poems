@@ -10,7 +10,7 @@ interface SlateProps {
 
 const Slate: React.FC<SlateProps> = ({ header, children, className = "" }) => {
   return (
-    <div className="contanier-fluid">
+    <div className="container-fluid">
       <div className="row justify-content-center">
         <div className="col-md-8  col-lg-10 column">
           <div className={`p-4   ${className}`}>

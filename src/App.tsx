@@ -46,10 +46,23 @@ import Pluviophile from "./pages/pluviophile";
 import Karma from "./pages/karma";
 import Karma_2 from "./pages/karma_2";
 import Forever from "./pages/forever";
+import Silence from "./pages/silence";
+import Perhaps from "./pages/perhaps";
+import Pretence from "./pages/pretence";
+import Gone from "./pages/gone";
+import Sunset from "./pages/sunset";
+import The_old_me from "./pages/the_old_me";
+import ExplicitPage from "./pages/warning/warning";
 
 // const About = () => <h2>ℹ️ About Page</h2>;
 // const Contact = () => <h2>📞 Contact Page</h2>;
 // const Home = () => <h1>hi, my name is...</h1>
+
+
+const handleAccept = () => {
+  sessionStorage.setItem("explicitAccepted", "true");
+  
+};
 
 function App() {
   return (
@@ -96,10 +109,19 @@ function App() {
           <Route path="i_am" element={<I_am />} />
           <Route path="straitjacket" element={<Straitjacket />} />
           <Route path="lost" element={<Lost />} />
-          <Route path="pluviophile" element={<Pluviophile/>} />
-          <Route path="karma" element={<Karma/>}/>
-          <Route path="karma_2" element={<Karma_2/>}/>
-          <Route path="forever" element={<Forever/>}/>
+          <Route path="pluviophile" element={<Pluviophile />} />
+          <Route path="karma" element={<Karma />} />
+          <Route path="karma_2" element={<Karma_2 />} />
+          <Route path="forever" element={<Forever />} />
+          <Route path="silence" element={<Silence />} />
+          <Route path="perhaps" element={<Perhaps />} />
+          <Route path="pretence" element={<Pretence />} />
+          <Route path="gone" element={<Gone/>}/>
+          <Route path="sunset" element={<Sunset/>}/>
+          <Route path="the_old_me" element={<The_old_me/>}/>
+          <Route path="explicit" element={<ExplicitPage onAccept={handleAccept}/>}/>
+
+
 
 
 
@@ -110,8 +132,6 @@ function App() {
 
 
         
-        <Route path="" element={}/>
-        <Route path="" element={}/>
 
         <Route path="" element={}/>
         <Route path="" element={}/>

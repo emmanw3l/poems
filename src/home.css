@@ -1,0 +1,21 @@
+.containers{
+    background-color: var(--background-color);
+}
+
+
+.mt{
+    margin-top: 7%;
+}
+
+span a{
+    font-size: 35px;
+    
+}
+
+
+@media (max-width: 576px) {
+  .mt{
+    margin-top: 7rem;
+    justify-content: center;
+  }
+}

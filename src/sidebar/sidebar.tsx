@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { NavLink } from "react-router-dom";
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom"; `
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./sidebar.css";
@@ -16,7 +16,7 @@ const Sidebar: React.FC = () => {
     <div className={`sticky-top layout ${isSidebarOpen ? "sidebar-open" : ""}`}>
       {/* Navbar */}
       <nav className="navbar  px-3  d-flex justify-content-between">
-        <span className=" mb-0 h1">
+        <span className=" h1">
           <NavLink to="/" className="nav-link">
             <FontAwesomeIcon icon={faHome} />
           </NavLink>
@@ -40,6 +40,11 @@ const Sidebar: React.FC = () => {
           {/* Add your nav links here */}
 
           <ol className="p-3 text-center " onClick={toggleSidebar}>
+            <li>
+              <NavLink to="explicit" className="link">
+                explicit
+              </NavLink>
+            </li>
             <li>
               <NavLink to="first" className="link">
                 1ST OF MANY
@@ -158,7 +163,7 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="death" className="link">
                 DEATH
               </NavLink>
             </li>
@@ -168,12 +173,12 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="forever" className="link">
                 FOREVER
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="glass" className="link">
                 GLASS
               </NavLink>
             </li>
@@ -183,7 +188,7 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="gone" className="link">
                 GONE
               </NavLink>
             </li>
@@ -330,7 +335,7 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="perhaps" className="link">
                 PERHAPS
               </NavLink>
             </li>
@@ -340,7 +345,7 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="pretence" className="link">
                 PRETENCE
               </NavLink>
             </li>
@@ -405,7 +410,7 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="sunset" className="link">
                 SUNSET
               </NavLink>
             </li>
@@ -415,7 +420,7 @@ const Sidebar: React.FC = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="" className="link">
+              <NavLink to="the_old_me" className="link">
                 THE OLD ME
               </NavLink>
             </li>
@@ -474,9 +479,9 @@ const Sidebar: React.FC = () => {
       </div>
 
       {/* Main Content */}
-      <main className="main-content container py-4">
+      {/* <main className="main-content container py-4">
         <Outlet />
-      </main>
+      </main> */}
     </div>
   );
 };
